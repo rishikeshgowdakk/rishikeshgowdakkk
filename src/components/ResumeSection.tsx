@@ -3,27 +3,14 @@ import { Button } from "./ui/button";
 import { Download, Briefcase, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const experience: TimelineEvent[] = [
-  {
-    date: '2021 - Present',
-    title: 'Senior Software Engineer',
-    subtitle: 'Tech Innovators Inc.',
-    description: 'Led development of a new SaaS platform using React and Node.js, improving performance by 30%. Mentored junior developers and established CI/CD pipelines.'
-  },
-  {
-    date: '2019 - 2021',
-    title: 'Frontend Developer',
-    subtitle: 'Digital Solutions Co.',
-    description: 'Developed and maintained responsive user interfaces for e-commerce clients. Collaborated with UI/UX designers to implement pixel-perfect designs.'
-  }
-];
+const experience: TimelineEvent[] = [];
 
 const education: TimelineEvent[] = [
   {
-    date: '2015 - 2019',
-    title: 'B.Sc. in Computer Science',
-    subtitle: 'University of Technology',
-    description: 'Graduated with honors. Focused on algorithms, data structures, and artificial intelligence. President of the coding club.'
+    date: '2023 - 2027',
+    title: 'B.E in Computer Science and Engineering',
+    subtitle: 'JSS Academy of Technical Education, Bangalore',
+    description: 'Currently pursuing a Bachelor of Engineering with a focus on computer science fundamentals, software development, and problem-solving.'
   }
 ];
 
@@ -47,7 +34,7 @@ export function ResumeSection() {
     <section id="resume">
       <div className="container mx-auto max-w-4xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">
-          <span className="text-primary">//</span> Career & Education
+          <span className="text-primary">//</span> Education
         </h2>
         <a href="/resume.pdf" download>
           <Button
@@ -62,15 +49,8 @@ export function ResumeSection() {
           </Button>
         </a>
 
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 text-left">
+        <div className="text-left max-w-2xl mx-auto">
           <div>
-            <h3 className="text-2xl font-bold mb-8 flex items-center gap-3"><Briefcase className="text-accent" /> Experience</h3>
-            <div className="relative">
-              {experience.map(event => <TimelineItem key={event.title} event={event} icon={Briefcase} />)}
-            </div>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold mb-8 flex items-center gap-3"><GraduationCap className="text-accent" /> Education</h3>
             <div className="relative">
               {education.map(event => <TimelineItem key={event.title} event={event} icon={GraduationCap} />)}
             </div>
