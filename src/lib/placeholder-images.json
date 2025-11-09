@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "projectOne",
+      "description": "Abstract visualization of code",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzYyNjg0NTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "projectTwo",
+      "description": "Futuristic user interface dashboard",
+      "imageUrl": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmdXR1cmlzdGljJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2MjcwMzM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic dashboard"
+    },
+    {
+      "id": "projectThree",
+      "description": "Network connections or data flow visualization",
+      "imageUrl": "https://images.unsplash.com/photo-1738082956257-06cde4444b1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuZXR3b3JrJTIwZGF0YXxlbnwwfHx8fDE3NjI3MDcyOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "network data"
+    }
+  ]
 }
