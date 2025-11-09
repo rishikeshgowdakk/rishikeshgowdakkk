@@ -1,5 +1,12 @@
 import { Award } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const certifications = [
   {
@@ -56,21 +63,35 @@ export function CertificationsSection() {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-tight">
           <span className="text-primary">//</span> Certifications
         </h2>
-        <div className="grid md:grid-cols-3 gap-8 text-left">
-          {certifications.map((item) => (
-            <Card key={item.title} className="bg-card/50 border-border hover:border-primary/50 transition-colors duration-300 flex flex-col items-center text-center p-6">
-              <CardHeader className="p-2">
-                <div className="p-4 bg-primary/10 rounded-full inline-flex mb-4 glow-primary-hover">
-                  <item.icon className="w-8 h-8 text-primary" />
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full"
+        >
+          <CarouselContent>
+            {certifications.map((item, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-1 h-full">
+                  <Card className="bg-card/50 border-border hover:border-primary/50 transition-colors duration-300 flex flex-col items-center text-center p-4 h-full">
+                    <CardHeader className="p-2 items-center">
+                      <div className="p-3 bg-primary/10 rounded-full inline-flex mb-3 glow-primary-hover">
+                        <item.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-lg font-bold leading-tight">{item.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="p-2 text-xs text-foreground/80 flex-grow">
+                      <p>{item.description}</p>
+                    </CardContent>
+                  </Card>
                 </div>
-                <CardTitle className="text-xl font-bold">{item.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="p-2 text-sm text-foreground/80 flex-grow">
-                <p>{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
       </div>
     </section>
   );
