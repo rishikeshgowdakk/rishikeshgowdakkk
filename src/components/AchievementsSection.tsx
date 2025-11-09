@@ -13,6 +13,11 @@ const achievements = [
     description: "Certified by AWS, demonstrating foundational knowledge of cloud concepts and services.",
   },
   {
+    icon: Award,
+    title: "AI Infrastructure and Operations Fundamentals",
+    description: "NVIDIA certified course. Grade Achieved: 96%",
+  },
+  {
     icon: Star,
     title: "Dean's List Honoree",
     description: "Achieved academic excellence by maintaining a top-tier GPA for three consecutive semesters.",
@@ -26,7 +31,7 @@ export function AchievementsSection() {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-tight">
           <span className="text-primary">//</span> Certifications & Achievements
         </h2>
-        <div className="grid md:grid-cols-3 gap-8 text-left">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
           {achievements.map((item) => (
             <Card key={item.title} className="bg-card/50 border-border hover:border-primary/50 transition-colors duration-300 flex flex-col items-center text-center p-6">
               <CardHeader className="p-2">
