@@ -38,7 +38,7 @@ export function ContactSection() {
               </form>
             </CardContent>
           </Card>
-          <div className="flex flex-col items-center md:items-start gap-6 text-left">
+          <div className="flex flex-col items-center md:items-start gap-6 text-center md:text-left">
             <p className="text-lg text-foreground/80">
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to reach out.
             </p>

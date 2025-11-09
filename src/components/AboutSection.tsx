@@ -10,7 +10,7 @@ export function AboutSection() {
         <p className="text-lg md:text-xl text-foreground/80 mb-12">
           A passionate computer science student with a drive to build and learn about web applications.
         </p>
-        <Card className="bg-card/50 border-2 border-dashed border-accent/30 p-8 text-left backdrop-blur-sm">
+        <Card className="bg-card/50 border-2 border-dashed border-accent/30 p-6 sm:p-8 text-left backdrop-blur-sm">
           <CardContent className="p-0">
             <div className="font-code text-base text-foreground/90 space-y-2">
               <p><span className="text-purple-400">const</span> <span className="text-primary">student</span> = &#123;</p>

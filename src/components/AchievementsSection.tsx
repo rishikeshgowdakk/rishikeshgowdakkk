@@ -28,7 +28,7 @@ export function AchievementsSection() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8 text-left">
           {achievements.map((item) => (
-            <Card key={item.title} className="bg-card/50 border-border hover:border-primary/50 transition-colors duration-300 flex flex-col items-center text-center p-4">
+            <Card key={item.title} className="bg-card/50 border-border hover:border-primary/50 transition-colors duration-300 flex flex-col items-center text-center p-6">
               <CardHeader className="p-2">
                 <div className="p-4 bg-primary/10 rounded-full inline-flex mb-4 glow-primary-hover">
                   <item.icon className="w-8 h-8 text-primary" />

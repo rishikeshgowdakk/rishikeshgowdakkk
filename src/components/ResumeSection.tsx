@@ -36,18 +36,20 @@ export function ResumeSection() {
         <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">
           <span className="text-primary">//</span> Education
         </h2>
-        <a href="/resume.pdf" download>
-          <Button
-            size="lg"
-            className={cn(
-              "mb-16 bg-primary/10 text-primary border border-primary rounded-full px-8 py-4 text-lg",
-              "shadow-[0_0_15px] shadow-primary/30",
-              "hover:bg-primary/20 hover:shadow-[0_0_25px] hover:shadow-primary/40 transition-all duration-300 group"
-            )}
-          >
-            <Download className="mr-2 h-5 w-5" /> Download Resume
-          </Button>
-        </a>
+        <div className="flex justify-center">
+          <a href="/resume.pdf" download>
+            <Button
+              size="lg"
+              className={cn(
+                "mb-16 bg-primary/10 text-primary border border-primary rounded-full px-8 py-4 text-lg",
+                "shadow-[0_0_15px] shadow-primary/30",
+                "hover:bg-primary/20 hover:shadow-[0_0_25px] hover:shadow-primary/40 transition-all duration-300 group"
+              )}
+            >
+              <Download className="mr-2 h-5 w-5" /> Download Resume
+            </Button>
+          </a>
+        </div>
 
         <div className="text-left max-w-2xl mx-auto">
           <div>
