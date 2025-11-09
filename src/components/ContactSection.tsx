@@ -8,7 +8,7 @@ import { Textarea } from "./ui/textarea";
 const socialLinks = [
   { name: 'GitHub', icon: Github, url: 'https://github.com' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com' },
-  { name: 'Email', icon: Mail, url: 'mailto:email@example.com' },
+  { name: 'Email', icon: Mail, url: 'mailto:rishikeshgowdakk@gmail.com' },
 ];
 
 export function ContactSection() {
@@ -21,18 +21,18 @@ export function ContactSection() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <Card className="bg-card/50 border-border p-8 text-left">
             <CardContent className="p-0">
-              <form className="space-y-6">
+              <form action="mailto:rishikeshgowdakk@gmail.com" method="post" encType="text/plain" className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Your name" className="bg-background/50" />
+                  <Input id="name" name="name" placeholder="Your name" className="bg-background/50" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" className="bg-background/50" />
+                  <Input id="email" name="email" type="email" placeholder="your@email.com" className="bg-background/50" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" placeholder="Your message..." className="bg-background/50" />
+                  <Textarea id="message" name="message" placeholder="Your message..." className="bg-background/50" />
                 </div>
                 <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 glow-primary-hover">Send Message</Button>
               </form>
