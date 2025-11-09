@@ -3,9 +3,9 @@ import {
   Dna,
   Database,
   Terminal,
-  BrainCircuit,
-  Boxes,
-  Palette
+  Code,
+  Binary,
+  GitMerge
 } from "lucide-react";
 
 const skills: Skill[] = [
@@ -13,10 +13,10 @@ const skills: Skill[] = [
   { name: 'React/Next.js', icon: Dna },
   { name: 'Node.js', icon: Terminal },
   { name: 'Python', icon: Dna },
+  { name: 'Java', icon: Code },
+  { name: 'C++', icon: Code },
+  { name: 'Data Structures', icon: GitMerge },
   { name: 'Databases', icon: Database },
-  { name: 'UI/UX Design', icon: Palette },
-  { name: 'AI/ML', icon: BrainCircuit },
-  { name: 'DevOps', icon: Boxes },
 ];
 
 export function SkillsSection() {
