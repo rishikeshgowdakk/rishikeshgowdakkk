@@ -27,8 +27,8 @@ const skills: Skill[] = [
 
 export function SkillsSection() {
   return (
-    <section id="skills">
-      <div className="container mx-auto max-w-5xl text-center">
+    <section id="skills" className="w-full py-20 md:py-32">
+      <div className="container mx-auto max-w-5xl text-center px-4 md:px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-tight">
           <span className="text-primary">//</span> My Tech Arsenal
         </h2>
