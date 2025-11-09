@@ -1,21 +1,27 @@
 import type { Skill } from "@/lib/types";
 import { 
-  Dna,
   Database,
   Terminal,
   Code,
   Binary,
-  GitMerge
+  GitMerge,
+  Network,
+  Cpu,
+  BookCopy
 } from "lucide-react";
 
 const skills: Skill[] = [
-  { name: 'JavaScript', icon: Dna },
-  { name: 'React/Next.js', icon: Dna },
-  { name: 'Node.js', icon: Terminal },
-  { name: 'Python', icon: Dna },
-  { name: 'Java', icon: Code },
   { name: 'C++', icon: Code },
+  { name: 'Java', icon: Code },
+  { name: 'Python', icon: Code },
+  { name: 'JavaScript', icon: Code },
+  { name: 'React/Next.js', icon: Code },
+  { name: 'Node.js', icon: Terminal },
   { name: 'Data Structures', icon: GitMerge },
+  { name: 'Algorithms', icon: Binary },
+  { name: 'Operating Systems', icon: Cpu },
+  { name: 'Computer Networks', icon: Network },
+  { name: 'OOP', icon: BookCopy },
   { name: 'Databases', icon: Database },
 ];
 
