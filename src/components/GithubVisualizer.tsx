@@ -1,6 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect } from 'react';
+import { useFormStatus } from 'react-dom';
 import { handleVisualization } from '@/app/actions';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -8,7 +9,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { Terminal, Loader, Github } from 'lucide-react';
 import { ThreeScene } from './ThreeScene';
-import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
 const initialState = {
@@ -33,7 +33,7 @@ function SubmitButton() {
 }
 
 export function GithubVisualizer() {
-  const [state, formAction] = useFormState(handleVisualization, initialState);
+  const [state, formAction] = useActionState(handleVisualization, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
