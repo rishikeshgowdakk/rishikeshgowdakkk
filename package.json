@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A portfolio website using HTML, CSS, and jQuery.",
   "scripts": {
+    "dev": "npx http-server -p 9002",
     "start": "npx http-server -p 9002"
   },
   "dependencies": {
