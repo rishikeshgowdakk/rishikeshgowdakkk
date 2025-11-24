@@ -258,7 +258,28 @@ header .container {
 .code-keyword { color: #c084fc; }
 .code-variable { color: var(--primary); }
 .code-string { color: #86efac; }
+.code-comment { color: #6b7280; }
 .ml-4 { margin-left: 1.5rem; }
+
+.declaration {
+    margin-top: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+.declaration h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+.declaration p {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    font-style: italic;
+}
+
 
 /* Skills Section */
 .skills-grid {
